@@ -4,52 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Er. Basanta Adhikari | Civil Engineer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: #333; background: #f4f7f6; }
-        header { background: #2c3e50; color: white; padding: 3rem 1rem; text-align: center; }
-        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0; }
-        .skill-badge { background: #3498db; color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
-        .project-card { border-left: 5px solid #2c3e50; background: #f9f9f9; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px; }
-        .contact-btn { background: #27ae60; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem; font-weight: bold; }
-        footer { text-align: center; padding: 2rem; background: #2c3e50; color: white; margin-top: 2rem; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: #333; line-height: 1.6; background-color: #f4f7f6; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        header { background: #1a365d; color: white; text-align: center; padding: 60px 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .service-item { background: white; margin-bottom: 15px; padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 6px solid #3182ce; }
+        .service-item i { font-size: 1.8rem; color: #3182ce; min-width: 40px; text-align: center; }
+        .fb-btn { background: #1877F2; color: white; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; }
     </style>
 </head>
 <body>
-
 <header>
-    <h1>Er. Basanta Adhikari</h1>
-    <p>Civil Engineer | Structural Design | Construction Management</p>
+    <img src="profile.jpg" alt="Er. Basanta Adhikari" class="profile-img" data-aos="zoom-in">
+    <h1 data-aos="fade-down">Er. Basanta Adhikari</h1>
+    <p data-aos="fade-up">Civil Engineer | Structural Designer</p>
 </header>
-
 <div class="container">
-    <h2>About Me</h2>
-    <p>Dedicated Civil Engineer specializing in structural analysis, earthquake-resistant design (NBC), and efficient construction management. Committed to building safe and sustainable infrastructures.</p>
-
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span class="skill-badge">AutoCAD (2D/3D)</span>
-        <span class="skill-badge">ETABS</span>
-        <span class="skill-badge">SAP2000</span>
-        <span class="skill-badge">Quantity Estimation</span>
-        <span class="skill-badge">Site Supervision</span>
-    </div>
-
-    <h2>Key Projects</h2>
-    <div class="project-card">
-        <h3>Residential Building Design</h3>
-        <p>Complete structural design and analysis for modern residential projects ensuring safety and precision.</p>
-    </div>
-
-    <h2>Contact Information</h2>
-    <p>Looking for a professional engineer? Let's talk!</p>
-    <a href="mailto:basantadhikari2003@gmail.com" class="contact-btn">Email Me: basantadhikari2003@gmail.com</a>
+    <section>
+        <h2 style="text-align: center; margin-bottom: 30px;" data-aos="fade-right">Our Services</h2>
+        <div class="service-item" data-aos="fade-up"><i class="fas fa-pencil-ruler"></i><div class="service-text"><h3>Structural Design & Analysis</h3><p>Safe solutions using ETABS and SAP2000.</p></div></div>
+        <div class="service-item" data-aos="fade-up" style="border-left-color: #38a169;"><i class="fas fa-file-invoice" style="color: #38a169;"></i><div class="service-text"><h3>Quantity Estimation</h3><p>Accurate material and project costing.</p></div></div>
+        <div class="service-item" data-aos="fade-up" style="border-left-color: #e53e3e;"><i class="fas fa-user-shield" style="color: #e53e3e;"></i><div class="service-text"><h3>Site Supervision</h3><p>Quality control during construction.</p></div></div>
+        <div class="service-item" data-aos="fade-up" style="border-left-color: #805ad5;"><i class="fas fa-map" style="color: #805ad5;"></i><div class="service-text"><h3>Municipal Drawings</h3><p>Naksa Pass blueprints.</p></div></div>
+    </section>
+    <section style="text-align: center; margin-top: 50px;" data-aos="zoom-in">
+        <h3>Connect with Engineering Works</h3>
+        <a href="https://www.facebook.com/profile.php?id=100083424515141" target="_blank" class="fb-btn"><i class="fab fa-facebook-f"></i> Visit Engineering Works Page</a>
+    </section>
 </div>
-
-<footer>
-    <p>&copy; 2026 Er. Basanta Adhikari. All rights reserved.</p>
+<footer style="text-align: center; padding: 40px; color: #a0aec0; font-size: 0.8rem;">
+    <p>&copy; 2026 Er. Basanta Adhikari</p>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
+
 
